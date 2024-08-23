@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ออกแบบนวัตกรรมเพื่อส่งเสริมการใช้ยาให้ถูกต้อง use</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ออกแบบนวัตกรรมเพื่อส่งเสริมการใช้ยาให้ถูกต้อง</h1>
+        <nav>
+            <ul>
+                <li><a href="#diseases">Diseases</a></li>
+                <li><a href="#medications">Medications</a></li>
+                <li><a href="#tips">Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="diseases">
+            <h2>Select a Disease</h2>
+            <ul>
+                <li><a href="#disease1" onclick="showMedications('disease1')">Disease 1</a></li>
+                <li><a href="#disease2" onclick="showMedications('disease2')">Disease 2</a></li>
+            </ul>
+        </section>
+
+        <section id="medications">
+            <h2>Medications</h2>
+            <div id="medication-info"></div>
+        </section>
+
+        <section id="tips">
+            <h2>Common Issues</h2>
+            <ul>
+                <li><a href="#missed-dose" onclick="showTip('missed-dose')">Missed Dose</a></li>
+                <li><a href="#overdose" onclick="showTip('overdose')">Overdose</a></li>
+            </ul>
+            <div id="tip-info"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Medication Use Guide</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
